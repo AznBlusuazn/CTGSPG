@@ -116,15 +116,15 @@
     Protected Sub GoToWeb(type As String)
         Select Case LCase(type)
             Case "pp"
-                Process.Start("https://www.paypal.me/AznBlusuazn")
+                Response.Redirect("https://www.paypal.me/AznBlusuazn")
             Case "pt"
-                Process.Start("https://www.patreon.com/clarktribegames")
+                Response.Redirect("https://www.patreon.com/clarktribegames")
             Case "fb"
-                Process.Start("https://www.facebook.com/clarktribe.games")
+                Response.Redirect("https://www.facebook.com/clarktribe.games")
             Case "dc"
-                Process.Start("https://discord.gg/6kW4der")
+                Response.Redirect("https://discord.gg/6kW4der")
             Case "cu"
-                Process.Start("mailto:info@clarktribegames.com")
+                Response.Redirect("mailto:info@clarktribegames.com")
         End Select
     End Sub
 
